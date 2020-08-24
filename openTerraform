@@ -1,0 +1,4 @@
+docker start terraform-tools -i
+# docker run --user 1000:1000 -it --mount type=volume,source=terraformHomeDir,target=/home/appuser --mount type=bind,source=$HOME/.ssh,target=/home/appuser/.ssh --mount type=bind,source=$HOME/.aws,target=/home/appuser/.aws protag/terraform-tools
+
+

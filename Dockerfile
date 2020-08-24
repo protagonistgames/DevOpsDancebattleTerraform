@@ -31,4 +31,6 @@ RUN ./aws/install
 # Could maybe use IAM roles, if this image is run in AWS.
 # Run aws configure, somehow to get access key, etc in place.
 
-RUN apt-get install -y less
+RUN apt-get install -y less git vim
+
+RUN useradd -m -u 1000 -U appuser
